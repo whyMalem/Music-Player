@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-10/css/all.min.css"
+      integrity="sha512-Pv1WJMqAtVgNNct5vhq+4cgkKinKpV1jCwSWD4am9CjwxsJSCkLWKcE/ZBqHnEE1mHs01c8B0GMvcn/pQ/yrog=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="music_card">
+      <div class="song_title">
+        <div class="overflow">
+          <h2 class="song_name">PillowTalk</h2>
+        </div>
+        <p class="artist">Zayn Malik</p>
+      </div>
+
+      <figure class="album_cover">
+        <img
+          src="./images/Zayn Malik.jpg"
+          alt="cover images"
+          class="song_image"
+        />
+      </figure>
+
+      <audio src="./audio/PillowTalk.mp3"></audio>
+
+      <div class="progress_container">
+        <div class="duration">
+          <span class="current_time">00:00</span>
+          <span class="song_duration">00:00</span>
+        </div>
+
+        <div class="progress_bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="btn">
+          <i class="fas fa-retweet loop" title="Loop On"></i>
+        </div>
+
+        <div class="btn">
+          <i class="fas fa-backward prev" title="Previous"></i>
+        </div>
+
+        <div class="start btn">
+          <i class="fas fa-play pause" title="Play"></i>
+        </div>
+
+        <div class="btn"><i class="fas fa-forward next" title="Next"></i></div>
+
+        <div class="btn">
+          <i class="fas fa-list-ul playlist" title="Playlist"></i>
+        </div>
+      </div>
+
+      <!-- song playlist -->
+      <div class="song_playlist">
+        <i class="fas fa-chevron-circle-down dropdown"></i>
+
+        <div class="my_music_card">
+          <div class="playlist_header">
+            <h2>My Music</h2>
+          </div>
+
+          <div class="song_card">
+            <!-- picture -->
+            <figure class="album_cover">
+              <img
+                src="./images/Zayn Malik.jpg"
+                alt="cover images"
+                class="song_image"
+              />
+            </figure>
+
+            <!-- song name and artist name -->
+            <div class="song_title">
+              <div class="overflow">
+                <h2 class="song_name">PillowTalk</h2>
+              </div>
+              <p class="artist">Zayn Malik</p>
+            </div>
+
+            <!-- playing -->
+            <audio src="./audio/PillowTalk.mp3"></audio>
+          </div>
+
+          <div class="song_card">
+            <!-- picture -->
+            <figure class="album_cover">
+              <img
+                src="./images/Ed Sheeran.jpg"
+                alt="cover images"
+                class="song_image"
+              />
+            </figure>
+
+            <!-- song name and artist name -->
+            <div class="song_title">
+              <div class="overflow">
+                <h2 class="song_name">Galway Girl</h2>
+              </div>
+              <p class="artist">Ed Sheeran</p>
+            </div>
+
+            <!-- playing -->
+            <audio src="./audio/Galway Girl.mp3"></audio>
+          </div>
+
+          <div class="song_card">
+            <!-- picture -->
+            <figure class="album_cover">
+              <img
+                src="./images/Shawn Mendes.jpg"
+                alt="cover images"
+                class="song_image"
+              />
+            </figure>
+
+            <!-- song name and artist name -->
+            <div class="song_title">
+              <div class="overflow">
+                <h2 class="song_name">There's Nothing Holding Me Back</h2>
+              </div>
+              <p class="artist">Shawn Mendes</p>
+            </div>
+
+            <!-- playing -->
+            <audio src="./audio/There's Nothing Holdin' Me Back.mp3"></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
